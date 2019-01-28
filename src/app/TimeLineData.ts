@@ -1,5 +1,9 @@
 import {SingleData} from './SingleData';
 export class TimeLineData{
-    data  :SingleData;
-    label :String;
+    label : String;
+    data  : SingleData[];
+    constructor(label:String,data:SingleData[]){
+        this.label = label;
+        this.data = data;
+    }
 }
