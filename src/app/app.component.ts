@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'timeline-chart';
+  datas: number[];
+  option: any;
+  constructor(){
+    this.datas = [];
+    this.option = "";
+  }
 }
