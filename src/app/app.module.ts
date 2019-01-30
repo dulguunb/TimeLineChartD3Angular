@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { TimelineComponent } from './timeline/timeline.component';
-
+import { D3Service } from 'd3-ng2-service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +14,7 @@ import { TimelineComponent } from './timeline/timeline.component';
   exports:[
     TimelineComponent
   ],
-  providers: [],
+  providers: [D3Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
