@@ -5,6 +5,6 @@ export class Option {
     enableLiveTimer: boolean = false;
     timerTickInterval: number = 1000;
     hideGroupLabels: boolean = false;
-    width:number = 100;
-    height:number = 100;
+    width:number ;
+    height:number;
 }
