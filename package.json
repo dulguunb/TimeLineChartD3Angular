@@ -1,5 +1,5 @@
 {
-  "name": "timeline-chart",
+  "name": "ng2-d3-timeline-chart",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -46,5 +46,25 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.1.1"
-  }
+  },
+  "description": "This is an implementation of Timeline chart that has been created by https://github.com/commodityvectors using Typescript and Angular framework.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dulguunb/TimeLineChartD3Angular.git"
+  },
+  "keywords": [
+    "gantt",
+    "chart",
+    "timeline",
+    "chart",
+    "d3",
+    "angular"
+  ],
+  "author": "dulguun <bolddulguun2@gmail.com> (http://dulguunbold.me)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dulguunb/TimeLineChartD3Angular/issues"
+  },
+  "homepage": "https://github.com/dulguunb/TimeLineChartD3Angular#readme"
 }
