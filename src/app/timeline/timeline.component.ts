@@ -79,12 +79,12 @@ export class TimelineComponent implements OnChanges {
       .attr('height', height)
       .attr('width', width - groupWidth)
 
-    // this.svg.append('rect')
-    //   .attr('class', 'chart-bounds')
-    //   .attr('x', groupWidth)
-    //   .attr('y', 0)
-    //   .attr('height', height)
-    //   .attr('width', width - groupWidth)
+    this.svg.append('rect')
+      .attr('class', 'chart-bounds')
+      .attr('x', groupWidth)
+      .attr('y', 0)
+      .attr('height', height)
+      .attr('width', width - groupWidth)
 
     this.svg.append('g')
       .attr('class', 'x axis')
