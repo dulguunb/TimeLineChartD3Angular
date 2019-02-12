@@ -33,9 +33,11 @@ export class TimelineComponent implements OnChanges {
         agg.concat(e.data), []
     );
     let element = this.el.nativeElement.children[0].children[0];
+    // filtering array with the object that contains .data property 
+    // allElements[]:SingleData. contains list of SingleData
     let minDt = this.d3.min(allElements, this.getPointMinDt);
+    // maxDt is the same as the previous comment
     let maxDt = this.d3.max(allElements, this.getPointMaxDt);
-
     let elementWidth  = this.options.width  || element.clientWidth;
     let elementHeight = this.options.height || element.clientHeight;
     let margin = {
