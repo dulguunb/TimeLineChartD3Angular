@@ -221,12 +221,7 @@ export class TimelineComponent implements OnChanges {
     /*
     this.x() scalling function is only created at the constructor and no use at the
     zoomed() function when we define the zooming functionality.
-    Thus we need to create a new_scale function that will keep track of the zooming
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    *(To Verify the comment above: you can replace all of the occurances of new_scale function
-    with this.x() function and console.log(this.svg.select('.x.axis')) what you will see is that non-changed 
-    values of width and height int the rect element) *  
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Thus we need to create a new_scale function that will keep track of the zooming~
     */
     this.new_scale = this.d3.event.transform.rescaleX(this.x);
     // scaling x Axis items - which are the span of dates
@@ -239,7 +234,6 @@ export class TimelineComponent implements OnChanges {
         .attr('x1', d => { return this.new_scale(d.at) })
         .attr('x2', d => { return this.new_scale(d.at) });
     }
-    // this scaling increases and decreases the WIDTH of the WP's with
     // relation of the .x-axis option.intervalMInWidth contains the number that can 
     // scale if you zoom a lot then the invterval will dissappear
     this.svg.selectAll('rect.interval')
@@ -248,7 +242,7 @@ export class TimelineComponent implements OnChanges {
     // scaling dots
     this.svg.selectAll('circle.dot')
       .attr('cx', d => this.new_scale(d.at));
-    /* scaling the texts that correpond to the interval (which are the WP's)
+    /* scaling the texts that correpond to the interval type ()
        the zooming and scaling functionality have to hold <text> element
        in relative terms with the intervals thus it has to also scale and/or zoom the texts
     */
