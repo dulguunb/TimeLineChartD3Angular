@@ -63,7 +63,7 @@ export class TimelineComponent implements OnChanges {
     let zoom = this.d3.zoom()
       .on('zoom', this.zoomed);
 
-    this.svg = this.d3.select(element).append('svg')
+    this.svg = this.svg = this.d3.select("#mySvg")
       .attr('width', width + margin.left + margin.right)
       .attr('height', height + margin.top + margin.bottom)
       .append('g')
